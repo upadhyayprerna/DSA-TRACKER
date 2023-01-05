@@ -1,0 +1,13 @@
+Node* push(Node*head,int num){
+    Node*temp=new Node(num);
+    if(head==NULL){
+        head=temp;
+        return head
+    }
+    else{
+        temp->next=head;
+        head=temp;
+    }
+    return head;
+    
+}
