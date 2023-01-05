@@ -1,0 +1,15 @@
+void insertAtNode(Node*head, Node*pre, int data){
+    Node*insert=new Node(data);
+    if(head==pre){
+        head->next=insert;
+    }
+    else{
+        Node*temp=head;
+        while(temp!=NULL && temp=pre){
+            temp=temp->next;
+        }
+        insert->next=pre->next;
+        pre->next=insert;
+        
+    }
+}
